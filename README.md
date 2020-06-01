@@ -1,4 +1,4 @@
-# CRA Strarter
+# 1PAW - CRA Strarter
 
 This project is a starter used by [@calummoore](https://twitter.com/calummoore) for [@1productaweek](https://twitter.com/1productaweek), and is based on [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,6 +9,7 @@ It has the following additional features:
  - ✅ Emotion
  - ✅ Lazy Loading + React Router DOM
  - ✅ Storybook
+ - ✅ Rewired CRA
 
 
 ## Available Scripts
