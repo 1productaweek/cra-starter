@@ -4,12 +4,12 @@ This project is a starter used by [@calummoore](https://twitter.com/calummoore) 
 
 It has the following additional features:
 
- ✅ Typescript
- ✅ Opinionated ESLint
- ✅ Emotion
- ✅ Lazy Loading + React Router DOM
- ✅ Storybook
- ✅ Rewired CRA
+ - ✅ Typescript
+ - ✅ Opinionated ESLint
+ - ✅ Emotion
+ - ✅ Lazy Loading + React Router DOM
+ - ✅ Storybook
+ - ✅ Rewired CRA
 
 
 ## Available Scripts
