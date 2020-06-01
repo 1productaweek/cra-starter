@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CRA Strarter
+
+This project is a starter used by [@calummoore](https://twitter.com/calummoore) for [@1productaweek](https://twitter.com/1productaweek), and is based on [Create React App](https://github.com/facebook/create-react-app).
+
+It has the following additional features:
+
+ - ✅ Typescript
+ - ✅ Opinionated ESLint
+ - ✅ Emotion
+ - ✅ Lazy Loading + React Router DOM
+ - ✅ Storybook
+
 
 ## Available Scripts
 
