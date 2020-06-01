@@ -48,7 +48,8 @@
           "**/__stories__/**/*.tsx", 
           "**/*.sb.*",
           "config/*.js", 
-          "scripts/*.js"
+          "scripts/*.js",
+          "./config-overrides.*"
         ] 
       }
     ],
