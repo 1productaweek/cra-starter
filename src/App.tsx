@@ -1,12 +1,13 @@
 import React from 'react'
-import { Router, Redirect, Route, Link } from 'react-router-dom'
+import { Router, Redirect, Route, Link, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import loadable from '@loadable/component'
+import Loadable from 'react-loadable'
 import { ThemeProvider } from 'emotion-theming'
 import analytics from './config/analytics'
 
-const Page1 = loadable(() => import(/* webpackPrefetch: true */ './features/Page1'))
-const Page2 = loadable(() => import(/* webpackPrefetch: true */ './features/Page2'))
+const Loading = () => <div>Loading...</div>
+const Page1 = Loadable({ loading: Loading, loader: () => import(/* webpackPrefetch: true */ './features/Page1') })
+const Page2 = Loadable({ loading: Loading, loader: () => import(/* webpackPrefetch: true */ './features/Page2') })
 
 const history = createBrowserHistory()
 history.listen((location) => {
@@ -25,9 +26,16 @@ function App () {
           <Link to='/page1'>Page1</Link>
           <Link to='/page2'>Page2</Link>
         </p>
-        <Redirect path='/' exact to='/page1' />
-        <Route path='/page1' component={Page1} />
-        <Route path='/page2' component={Page2} />
+        <Switch>
+          <Redirect path='/' exact to='/page1' />
+          <Route path='/page1'>
+            <Page1 />
+          </Route>
+          <Route path='/page2'>
+            <Page2 />
+          </Route>
+        </Switch>
+
       </Router>
     </ThemeProvider>
   )
