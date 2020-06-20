@@ -1,7 +1,12 @@
-// eslint-disable-next-line
-const { override, addBabelPlugins, addBabelPreset } = require('customize-cra')
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { override, addBabelPlugins, addBabelPreset, addLessLoader } = require('customize-cra')
 
 module.exports = override(
+  addLessLoader({
+    lessOptions: {
+      javascriptEnabled: true,
+    },
+  }),
   addBabelPreset('@emotion/babel-preset-css-prop'),
   addBabelPlugins(
     '@babel/plugin-transform-react-display-name',
