@@ -17,3 +17,11 @@ It has the following additional features:
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+### Made by 1PAW
+
+https://1productaweek.com
+  * |- [Ralley](https://ralley.io) - queue as a service
+  * |- [Snapboard](https://snapboard.io) - hackable dashboard
